@@ -1,6 +1,6 @@
 {
   "name": "umami-better-sqlite3",
-  "version": "2.20.2-bsqlite",
+  "version": "2.20.2-sqlite",
   "description": "A modern, privacy-focused alternative to Google Analytics.",
   "author": "Umami Software, Inc. <hello@umami.is>",
   "license": "MIT",
