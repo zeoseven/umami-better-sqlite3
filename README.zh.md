@@ -1,4 +1,4 @@
-# Umami SQLite
+# Umami Better SQLite3
 
 [English](README.md) | **简体中文**
 
