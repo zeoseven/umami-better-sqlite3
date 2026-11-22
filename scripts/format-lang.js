@@ -1,0 +1,33 @@
+const fs = require('fs-extra');
+const path = require('path');
+const del = require('del');
+
+const src = path.resolve(__dirname, '../src/lang');
+const dest = path.resolve(__dirname, '../build/messages');
+const files = fs.readdirSync(src);
+
+del.sync([path.join(dest)]);
+
+/*
+This script takes the files from the `lang` folder and formats them into
+the format that format-js expects.
+ */
+async function run() {
+  await fs.ensureDir(dest);
+
+  files.forEach(file => {
+    const lang = require(`../src/lang/${file}`);
+    const keys = Object.keys(lang).sort();
+
+    const formatted = keys.reduce((obj, key) => {
+      obj[key] = { defaultMessage: lang[key] };
+      return obj;
+    }, {});
+
+    const json = `${JSON.stringify(formatted, null, 2)}\n`;
+
+    fs.writeFileSync(path.resolve(dest, file), json);
+  });
+}
+
+run();
