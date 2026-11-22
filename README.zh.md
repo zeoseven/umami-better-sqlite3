@@ -9,8 +9,8 @@
 [`better-sqlite3`](https://github.com/WiseLibs/better-sqlite3)。它保留了 Umami 的仪表盘、统计脚本、
 分享链接、团队、报告和事件追踪能力，同时把部署简化为“一个 Node.js 进程 + 一个数据库文件”。
 
-|---|---|
 | **数据库** | SQLite 3（通过 `better-sqlite3`） |
+|---|---|
 | **运行时** | Node.js 20+（推荐 22 LTS） |
 | **许可证** | [MIT](LICENSE) |
 

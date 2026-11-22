@@ -9,8 +9,8 @@ Built on Umami, this project replaces the original PostgreSQL / MySQL / ClickHou
 [`better-sqlite3`](https://github.com/WiseLibs/better-sqlite3). It retains Umami's dashboard, tracking script,
 share links, teams, reports, and event tracking, while simplifying deployment to "one Node.js process + one database file".
 
-|---|---|
 | **Database** | SQLite 3 (via `better-sqlite3`) |
+|---|---|
 | **Runtime** | Node.js 20+ (22 LTS recommended) |
 | **License** | [MIT](LICENSE) |
 
